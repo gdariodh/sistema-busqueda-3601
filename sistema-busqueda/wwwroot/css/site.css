@@ -75,4 +75,5 @@ body {
 .card-login{
     max-width: 420px;
     margin: 220px auto;
+    border-radius: 6px;
 }
