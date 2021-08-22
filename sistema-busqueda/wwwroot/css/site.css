@@ -61,6 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background: #ededed;
 }
 .footer {
   position: absolute;
@@ -68,4 +69,10 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/* Nuevo codigo css login*/
+.card-login{
+    max-width: 420px;
+    margin: 220px auto;
 }
