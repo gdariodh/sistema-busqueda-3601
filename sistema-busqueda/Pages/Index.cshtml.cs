@@ -13,9 +13,11 @@ namespace sistema_busqueda.Pages
     {
 
        [BindProperty]
+       [Required(ErrorMessage ="El campo usuario es requerido")]
         public string Usuario { get; set; }
         [Display(Name="Contraseña")]
         [BindProperty]
+        [Required(ErrorMessage ="El campo password es requerido")]
 
         public string Password { get; set; } 
 
@@ -31,10 +33,21 @@ namespace sistema_busqueda.Pages
 
         }
 
-        public void OnPost()
+        public ActionResult OnPost()
         {
-            var nombreUsuario = this.Usuario;
-            var passwordUsuario = this.Password;
+
+            if (ModelState.IsValid)
+            {
+                var nombreUsuario = this.Usuario;
+                var passwordUsuario = this.Password;
+                return RedirectToPage("./Privacy");
+            }
+            else
+            {
+                return Page();
+            }
+
+            
         }
     }
 }

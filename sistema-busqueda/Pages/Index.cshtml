@@ -28,11 +28,14 @@
                 <div class="form-group">
                     <label asp-for="Usuario"></label>
                     <input asp-for="Usuario" class="form-control" type="text" name="user" value="" />
+                    <span class="text-danger" asp-validation-for="Usuario"></span>
                 </div>
 
                 <div class="form-group">
                     <label asp-for="Password"></label>
                     <input asp-for="Password" class="form-control" type="password" name="password" value="" />
+                    <span class="text-danger" asp-validation-for="Password"></span>
+
                 </div>
 
                 <button type="submit" class="btn btn-outline-danger">Ingresar</button>
