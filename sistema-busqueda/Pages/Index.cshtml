@@ -24,18 +24,18 @@
             <h3>Ingreso al sistema</h3>
             </div>
 
-            <form class="card-body">
+            <form method="post" class="card-body">
                 <div class="form-group">
-                    <label>Usuario</label>
-                    <input class="form-control" type="text" name="user" value="" />
+                    <label asp-for="Usuario"></label>
+                    <input asp-for="Usuario" class="form-control" type="text" name="user" value="" />
                 </div>
 
                 <div class="form-group">
-                    <label>Password</label>
-                    <input class="form-control" type="text" name="password" value="" />
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" type="password" name="password" value="" />
                 </div>
 
-                <button class="btn btn-outline-danger">Ingresar</button>
+                <button type="submit" class="btn btn-outline-danger">Ingresar</button>
             </form>
         </div>
     </div>
