@@ -37,3 +37,9 @@ C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sis
 C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\obj\Debug\netcoreapp3.1\sistema-busqueda.genruntimeconfig.cache
 C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\obj\Debug\netcoreapp3.1\sistema-busqueda.csproj.CopyComplete
 C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\obj\Debug\netcoreapp3.1\Razor\Pages\Test.cshtml.g.cs
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\diazh\OneDrive\Escritorio\Aiep\programacion-segura\sistema-busqueda\sistema-busqueda\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using sistema_busqueda.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -42,7 +43,20 @@ namespace sistema_busqueda.Pages
             {
                 var nombreUsuario = this.Usuario;
                 var passwordUsuario = this.Password;
-                return RedirectToPage("./Privacy");
+                var repo = new IndexRepository();
+                
+
+                if (repo.ValidarUsuario(nombreUsuario, passwordUsuario))
+                {
+                    return RedirectToPage("./Privacy");
+
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "El usuario o la password no son validos");
+                    return Page();
+
+                }
             }
             else
             {
