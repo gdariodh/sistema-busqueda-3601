@@ -15,7 +15,14 @@ namespace sistema_busqueda.Repositories
         {
             bool resultado = false; 
             using SqlConnection sql = new SqlConnection(ConnectionString);
-            using SqlCommand cmd = new SqlCommand("select count(*) from usuarios where usuario= '" + usuario + "' and [password] = '" + password + "'", sql);
+            //using SqlCommand cmd = new SqlCommand("select count(*) from usuarios where usuario= '" + usuario + "' and [password] = '" + password + "'", sql);
+
+            // procedimientos almacenados
+            using SqlCommand cmd = new SqlCommand("sp_check_usuario", sql);
+            cmd.CommandType = System.Data.CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@usuario", usuario));
+            cmd.Parameters.Add(new SqlParameter("@password", password));
+            // termina consulta con procedimientos almacenados
             int valor;
 
             sql.Open();
